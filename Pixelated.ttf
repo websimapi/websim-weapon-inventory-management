@@ -1,0 +1,500 @@
+.weapon-card.rarity-Transcendent {
+  background: var(--transcendent-gradient);
+  border: 2px solid var(--transcendent-color);
+  box-shadow: 0 0 30px var(--transcendent-glow);
+  animation: borderGlow 2s infinite;
+}
+
+.weapon-list-item.rarity-Transcendent { 
+  background: var(--transcendent-gradient);
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px var(--transcendent-glow);
+  animation: transcendentGlow 2s infinite;
+}
+/* Rarity styles for list items */
+.rarity-Common { 
+  background: #a0a0a0;
+  color: #000;
+}
+.rarity-Uncommon { 
+  background: #4CAF50;
+  color: #fff;
+}
+.rarity-Rare { 
+  background: #2196F3;
+  color: #fff;
+}
+.rarity-Epic { 
+  background: #9C27B0;
+  color: #fff;
+}
+.rarity-Super-Epic { 
+  background: linear-gradient(45deg, #ff00ff, #ffd700);
+  color: #fff;
+}
+.rarity-Legendary { 
+  background: linear-gradient(45deg, #FFD700, #FFDF00);
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+.rarity-Mythical { 
+  background: linear-gradient(45deg, #8B0000, #FF0000);
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+.rarity-Transcendent { 
+  background: var(--transcendent-gradient, linear-gradient(45deg, #ffffff, #eeeeee));
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px var(--transcendent-glow, rgba(255,255,255,0.5));
+  animation: transcendentGlow 2s infinite;
+}
+@keyframes transcendentGlow {
+  0% { box-shadow: 0 0 20px var(--transcendent-glow); }
+  50% { box-shadow: 0 0 30px white; }
+  100% { box-shadow: 0 0 20px var(--transcendent-glow); }
+}
+@keyframes borderGlow {
+  0% { box-shadow: 0 0 30px var(--transcendent-glow); }
+  50% { box-shadow: 0 0 40px white; }
+  100% { box-shadow: 0 0 30px var(--transcendent-glow); }
+}
+@keyframes borderShimmer {
+  0% { border-color: #ff69b4; }
+  25% { border-color: #ffd700; }
+  50% { border-color: #ff00ff; }
+  75% { border-color: #ffd700; }
+  100% { border-color: #ff69b4; }
+}
+/* Element styles */
+.element-None { color: #ffffff; }
+.element-Fire { color: #ff4444; }
+.element-Ice { color: #00ffff; }
+.element-Water { color: #4444ff; }
+.element-Plant { color: #44ff44; }
+.element-Electric { color: #ffff44; }
+.element-Darkness { color: #4b0082; }
+.element-Light { color: #ffff80; }
+.element-Earth { color: #8b4513; }
+.element-Wind { color: #008080; }
+.element-Poison { color: #800080; }
+.element-Cute { color: #FFB6C1; }
+.element-Noble { color: #9370DB; }
+.element-Undead { color: #808000; }
+.element-Arcane { color: #8B008B; }
+.element-Transformation { color: #B8860B; }
+.element-Reality { color: #FF1493; }
+.element-Spirit { color: #98FB98; }
+.element-Inanimate { color: #00008B; }
+.element-Metal { color: #4A4A4A; }
+.element-Animal { color: #654321; }
+
+/* Theme styles */
+body.theme-cat {
+  background: url('/pink-background.gif') !important;
+  font-family: 'CatPaw', sans-serif;
+}
+body.theme-cat .input-section,
+body.theme-cat .weapon-card,
+body.theme-cat .chat-container,
+body.theme-cat .suggestions-box,
+body.theme-cat .battle-logs-box,
+body.theme-cat .admin-box,
+body.theme-cat .codes-box,
+body.theme-cat .rules-box {
+  background: rgba(255,182,193,0.3);
+}
+body.theme-cat h1 {
+  font-family: 'CatPaw', sans-serif;
+  color: #FFB6C1;
+}
+body.theme-cat .input-label {
+  color: #FFB6C1;
+}
+body.theme-cat button {
+  font-family: 'CatPaw', sans-serif;
+  background: #FFB6C1;
+}
+body.theme-cat button:hover {
+  background: #FFC0CB;
+}
+body.theme-cat input[type="text"],
+body.theme-cat select,
+body.theme-cat textarea {
+  font-family: 'CatPaw', sans-serif;
+  border-color: #FFB6C1;
+}
+body.theme-cat .chat-container {
+  border-color: #FFB6C1;
+}
+body.theme-cat .chat-message .username {
+  color: #FFB6C1;
+}
+/* Add color overrides for rarity styles */
+body.theme-cat .rarity-Common { 
+  background: #FFE4E1;
+  color: #FFB6C1;
+}
+body.theme-cat .rarity-Uncommon { 
+  background: #FFC0CB;
+  color: #fff;
+}
+body.theme-cat .rarity-Rare { 
+  background: #FFB6C1;
+  color: #fff;
+}
+body.theme-cat .rarity-Epic { 
+  background: #FF69B4;
+  color: #fff;
+}
+body.theme-cat .rarity-Super-Epic { 
+  background: linear-gradient(45deg, #FFC0CB, #FFB6C1);
+  color: #fff;
+}
+body.theme-cat .rarity-Legendary { 
+  background: linear-gradient(45deg, #FFB6C1, #FFC0CB);
+  color: #fff;
+}
+body.theme-cat .rarity-Mythical { 
+  background: linear-gradient(45deg, #FF69B4, #FFB6C1);
+  color: #fff;
+}
+/* Add color overrides for element styles */
+body.theme-cat .element-None { color: #FFE4E1; }
+body.theme-cat .element-Fire { color: #FFB6C1; }
+body.theme-cat .element-Ice { color: #E0FFFF; }
+body.theme-cat .element-Water { color: #F0F8FF; }
+body.theme-cat .element-Plant { color: #FFE4E1; }
+body.theme-cat .element-Electric { color: #FFF0F5; }
+body.theme-cat .element-Darkness { color: #FF69B4; }
+body.theme-cat .element-Light { color: #FFF0F5; }
+body.theme-cat .element-Earth { color: #FFE4E1; }
+body.theme-cat .element-Wind { color: #FFF0F5; }
+body.theme-cat .element-Poison { color: #FFC0CB; }
+body.theme-cat .element-Cute { color: #FFB6C1; }
+body.theme-cat .element-Noble { color: #FFC0CB; }
+body.theme-cat .element-Undead { color: #FFE4E1; }
+body.theme-cat .element-Arcane { color: #FF69B4; }
+body.theme-cat .element-Transformation { color: #FFB6C1; }
+body.theme-cat .element-Reality { color: #FFC0CB; }
+body.theme-cat .element-Spirit { color: #FFE4E1; }
+body.theme-cat .element-Inanimate { color: #FFF0F5; }
+body.theme-cat .element-Metal { color: #FFE4E1; }
+body.theme-cat .element-Animal { color: #FFB6C1; }
+
+/* Theme styles for emo mode */
+body.theme-emo {
+  filter: grayscale(100%);
+  font-family: "Viafont", monospace;
+}
+body.theme-emo h1,
+body.theme-emo button,
+body.theme-emo input[type="text"],
+body.theme-emo select,
+body.theme-emo textarea,
+body.theme-emo .input-label {
+  font-family: "Viafont", monospace;
+}
+
+/* Nuclear theme */
+body.theme-nuclear {
+  background: 
+    radial-gradient(circle at 25% 25%, #0a0a0a 10%, transparent 10%),
+    radial-gradient(circle at 75% 75%, #0a0a0a 10%, transparent 10%),
+    linear-gradient(45deg, #1a1a00 25%, transparent 25%),
+    linear-gradient(-45deg, #1a1a00 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #1a1a00 75%),
+    linear-gradient(-45deg, transparent 75%, #1a1a00 75%);
+  background-color: #0d1a0d;
+  background-size: 30px 30px, 30px 30px, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+  color: #00ff00;
+}
+body.theme-nuclear .input-section,
+body.theme-nuclear .weapon-card,
+body.theme-nuclear .chat-container,
+body.theme-nuclear .suggestions-box,
+body.theme-nuclear .battle-logs-box,
+body.theme-nuclear .admin-box,
+body.theme-nuclear .codes-box,
+body.theme-nuclear .rules-box {
+  background: rgba(0,30,0,0.8);
+  border-color: #00ff00;
+}
+body.theme-nuclear h1 {
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+}
+body.theme-nuclear button {
+  background: #003300;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+}
+body.theme-nuclear button:hover {
+  background: #004400;
+  box-shadow: 0 0 10px #00ff00;
+}
+body.theme-nuclear input[type="text"],
+body.theme-nuclear select,
+body.theme-nuclear textarea {
+  background: #001a00;
+  border-color: #00ff00;
+  color: #00ff00;
+}
+
+/* Blue theme */
+body.theme-blue {
+  background: 
+    linear-gradient(45deg, #001a33 25%, transparent 25%),
+    linear-gradient(-45deg, #001a33 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #001a33 75%),
+    linear-gradient(-45deg, transparent 75%, #001a33 75%);
+  background-color: #000d1a;
+  background-size: 20px 20px;
+  color: #6495ed;
+}
+body.theme-blue .input-section,
+body.theme-blue .weapon-card,
+body.theme-blue .chat-container,
+body.theme-blue .suggestions-box,
+body.theme-blue .battle-logs-box,
+body.theme-blue .admin-box,
+body.theme-blue .codes-box,
+body.theme-blue .rules-box {
+  background: rgba(0,30,60,0.8);
+  border-color: #6495ed;
+}
+body.theme-blue h1 {
+  color: #6495ed;
+  text-shadow: 0 0 10px #6495ed;
+}
+body.theme-blue button {
+  background: #003366;
+  border: 1px solid #6495ed;
+  color: #6495ed;
+}
+body.theme-blue button:hover {
+  background: #004488;
+  box-shadow: 0 0 10px #6495ed;
+}
+body.theme-blue input[type="text"],
+body.theme-blue select,
+body.theme-blue textarea {
+  background: #001a33;
+  border-color: #6495ed;
+  color: #6495ed;
+}
+
+/* Deer theme */
+body.theme-deer {
+  background: url('/pink-background.gif');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #8b4513;
+}
+body.theme-deer .input-section,
+body.theme-deer .weapon-card,
+body.theme-deer .chat-container,
+body.theme-deer .suggestions-box,
+body.theme-deer .battle-logs-box,
+body.theme-deer .admin-box,
+body.theme-deer .codes-box,
+body.theme-deer .rules-box {
+  background: rgba(139,69,19,0.3);
+  border-color: #d2691e;
+}
+body.theme-deer h1 {
+  color: #d2691e;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+body.theme-deer button {
+  background: #8b4513;
+  border: 1px solid #d2691e;
+  color: #fff;
+}
+body.theme-deer button:hover {
+  background: #a0522d;
+  box-shadow: 0 0 10px #d2691e;
+}
+body.theme-deer input[type="text"],
+body.theme-deer select,
+body.theme-deer textarea {
+  background: rgba(139,69,19,0.8);
+  border-color: #d2691e;
+  color: #fff;
+}
+
+.suggestions-section {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 320px;
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.suggestions-box,
+.battle-logs-box,
+.admin-box,
+.codes-box,
+.rules-box {
+  background: #1a1a1a;
+  border: 2px solid #ff3333;
+  border-radius: 10px;
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.suggestion-item {
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.suggestion-item:hover {
+  background: #333;
+  transform: scale(1.02);
+}
+.chat-container {
+  background: #1a1a1a;
+  border: 2px solid #ff3333;
+  border-radius: 10px;
+  padding: 15px;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+.chat-message {
+  margin-bottom: 10px;
+  padding: 8px;
+  background: #2a2a2a;
+  border-radius: 5px;
+  border-left: 3px solid #ff3333;
+}
+.chat-message .username {
+  color: #ff3333;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.chat-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.chat-input input {
+  flex: 1;
+  margin-bottom: 0;
+}
+.tab-buttons {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.tab-button {
+  padding: 8px 12px;
+  background: #2a2a2a;
+  border: 1px solid #ff3333;
+  color: #ff3333;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  transition: all 0.2s;
+  font-size: 12px;
+}
+.tab-button.active {
+  background: #ff3333;
+  color: white;
+}
+.tab-button:hover {
+  background: #333;
+}
+.tab-button.active:hover {
+  background: #ff4444;
+}
+.codes-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.codes-form input {
+  flex: 1;
+  margin-bottom: 0;
+}
+.battle-logs-box .battle-log {
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.battle-logs-box .battle-log .participants {
+  color: #ff3333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.battle-logs-box .battle-log .result {
+  color: #ffcc00;
+}
+.admin-password {
+  margin-bottom: 15px;
+}
+.admin-controls {
+  display: none;
+}
+.admin-controls.active {
+  display: block;
+}
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.upload-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2a2a2a;
+  border: 2px solid #ff3333;
+  transition: .4s;
+  border-radius: 24px;
+}
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #ff3333;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .toggle-slider {
+  background-color
